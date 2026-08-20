@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.brasil {
+
+    background-image: url('https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=1920&auto=format&fit=crop');
+
+    /* Ajustes para a imagem preencher a tela com qualidade */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a tela sem distorcer */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+
+
+    /* Estilos de texto para garantir leitura sobre a foto */
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    border: 5px black solid;
+    padding: 40px;
+
+    /* Sombra escura atrás do texto para dar contraste e legibilidade */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.argentina {
+    background-image: url('https://images.unsplash.com/photo-1589909202802-8f4aadce1849?q=80&w=1920&auto=format&fit=crop');
+
+    /* Ajustes para a imagem preencher a tela com qualidade */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a tela sem distorcer */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+
+
+    /* Estilos de texto para garantir leitura sobre a foto */
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 40px;
+    border: 5px black solid;
+    /* Sombra escura atrás do texto para dar contraste e legibilidade */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.colombia {
+
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Valle_de_Cocora_01.jpg/1920px-Valle_de_Cocora_01.jpg');
+
+    /* Ajustes para a imagem preencher a tela com qualidade */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a tela sem distorcer */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+
+
+    /* Estilos de texto para garantir leitura sobre a foto */
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 40px;
+
+    /* Sombra escura atrás do texto para dar contraste e legibilidade */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.mexico {
+
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1920px-Chichen_Itza_3.jpg');
+
+    /* Ajustes para a imagem preencher a tela com qualidade */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a tela sem distorcer */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+
+
+    /* Estilos de texto para garantir leitura sobre a foto */
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 40px;
+     border: 5px black solid;   
+    /* Sombra escura atrás do texto para dar contraste e legibilidade */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
