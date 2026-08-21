@@ -1,0 +1,113 @@
+
+
+/* =========================================
+                menu
+   ========================================= */
+
+   header {
+  
+  padding: 20px 0;           /* Espaçamento em cima e embaixo */
+   
+}
+
+
+.menu {
+  display: flex;             /* Coloca os itens lado a lado */
+  justify-content: center;
+  align-items: center;       /* Centraliza tudo no meio da tela */
+  gap: 10px;                 /* Espaço exato de 30px entre cada link */
+}
+
+
+.menu a {
+  color: #000000;            /* Letra quase branca */
+  text-decoration: none;     /* Remove o sublinhado feio padrão dos links */
+  font-size: 18px;           /* Tamanho da letra */
+  font-weight: 600;          /* Letra mais grossa (negrito suave) */
+  padding: 8px 16px;         /* Área clicável maior */
+  border-radius: 6px;        /* Bordas levemente arredondadas */
+  transition: all 0.3s ease; /* Faz as mudanças do :hover serem suaves */
+}
+
+
+.menu a:hover {
+  background-color: #3b82f6; /* Fundo fica azul */
+  color: #ffffff;            /* Garante que a letra continue branca */
+  transform: translateY(-2px); /* Dá uma leve "subidinha" no link */
+}
+
+
+
+/* =========================================
+   Estrutura Principal
+   ========================================= */
+body {
+    background-color: #f4f7f6; /* Fundo cinza clarinho para destacar os cartões brancos */
+    font-family: Arial, sans-serif; /* Fonte limpa */
+}
+
+.conteudo-sobre {
+    max-width: 900px;  /* Limita a largura para não ficar muito esticado */
+    margin: 40px auto; /* Centraliza o conteúdo na tela */
+    padding: 0 20px;
+}
+
+.cabecalho-sobre {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cabecalho-sobre h1 {
+    font-size: 2.5rem;
+    color: #1f2937;
+}
+
+/* =========================================
+   Estilo dos Cartões (Cards)
+   ========================================= */
+.bloco-info {
+    background-color: #ffffff;    /* Fundo branco */
+    border-radius: 12px;          /* Pontas arredondadas */
+    padding: 30px;                /* Espaço interno para o texto não colar nas bordas */
+    margin-bottom: 25px;          /* Espaço entre um cartão e outro */
+    
+    /* A mágica do cartão: Sombra suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    
+    /* Um charme extra: uma borda colorida na esquerda */
+    border-left: 6px solid #3b82f6; 
+    
+    /* Prepara a animação do hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima do cartão */
+.bloco-info:hover {
+    transform: translateY(-5px);                /* O cartão dá uma leve levantada */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* A sombra fica mais forte */
+}
+
+/* =========================================
+   Textos de dentro do Cartão
+   ========================================= */
+.bloco-info h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.bloco-info p {
+    color: #555555;
+    line-height: 1.7; /* Aumenta o espaço entre as linhas do texto (melhora a leitura) */
+}
+
+/* =========================================
+   Rodapé (Footer)
+   ========================================= */
+footer {
+
+   
+    text-align: center;
+    padding: 0;
+    margin-top: auto;
+}
