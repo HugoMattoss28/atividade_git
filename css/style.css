@@ -99,7 +99,7 @@ h1 {
 }
 
 p {
-    font-weight: 600;
+    font-weight: 800;
     line-height: 1.6;
     margin-bottom: 25px;
     color: #020202;
@@ -134,16 +134,17 @@ li strong {
    Cores Personalizadas para cada País
    ========================================= */
 .brasil h1 { color: #009c3b; }
-.brasil li { border-left-color: #50fe00; }
-.brasil p { color: #000000; }
+.brasil li { border-left-color: #2a11ec; }
+.brasil p { color: #baff0c; }
 
 
 .argentina h1 { color: #74acdf; }
 .argentina li { border-left-color: #00d9ff; }
-.argentina p { color: #2bf1f8; }
+.argentina p { color: #15d0ff; }
 
 .mexico h1 { color: #006847; }
 .mexico li { border-left-color: #ff132f; }
+.mexico p { color: #ffffff; }
 
 .colombia h1 { color: #fcd116; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
 .colombia li { border-left-color: #0062ff; }
@@ -151,7 +152,7 @@ li strong {
 
 
 .brasil{
-    background-image: url('https://i.pinimg.com/736x/f8/5b/90/f85b90beae37aa96c4a93959da873f56.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6)),url('https://i.pinimg.com/736x/f8/5b/90/f85b90beae37aa96c4a93959da873f56.jpg');
     background-size: cover;
     background-position: center;
     
@@ -159,20 +160,20 @@ li strong {
 }
 
 .argentina{
-    background-image: url('https://i.pinimg.com/736x/83/0e/19/830e19d1da5645ad99291b9173eb14eb.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/83/0e/19/830e19d1da5645ad99291b9173eb14eb.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
 }
 
 .mexico{
-    background-image: url('https://i.pinimg.com/736x/94/1d/b0/941db0d0f4b135815183e56400434377.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/94/1d/b0/941db0d0f4b135815183e56400434377.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
 }
 .colombia{
-    background-image: url('https://i.pinimg.com/736x/4b/9c/7f/4b9c7fbd445c555b66b75b635ac9cbf7.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/4b/9c/7f/4b9c7fbd445c555b66b75b635ac9cbf7.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
