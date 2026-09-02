@@ -1,0 +1,10 @@
+git config --global user.name "nome" 
+git config --global user.email "email"
+git init
+git add
+git status
+git remote add origin (link do repositório)
+git remote -v (para ter certeza)
+git branch -M main (para mudar de master para main)
+git commit -m "Criando estrutura inicial do projeto"
+git push -u origin main

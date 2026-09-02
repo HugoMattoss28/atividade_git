@@ -1,0 +1,196 @@
+/* =========================================
+   Reset Básico (Remove margens padrão)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+                menu
+   ========================================= */
+
+   header {
+  
+  padding: 20px 0;           /* Espaçamento em cima e embaixo */
+   
+}
+
+
+.menu {
+  display: flex;             /* Coloca os itens lado a lado */
+  justify-content: center;
+  align-items: center;       /* Centraliza tudo no meio da tela */
+  gap: 10px;                 /* Espaço exato de 30px entre cada link */
+}
+
+
+.menu a {
+  color: #f3f4f6;            /* Letra quase branca */
+  text-decoration: none;     /* Remove o sublinhado feio padrão dos links */
+  font-size: 18px;           /* Tamanho da letra */
+  font-weight: 600;          /* Letra mais grossa (negrito suave) */
+  padding: 8px 16px;         /* Área clicável maior */
+  border-radius: 6px;        /* Bordas levemente arredondadas */
+  transition: all 0.3s ease; /* Faz as mudanças do :hover serem suaves */
+}
+
+
+.menu a:hover {
+  background-color: #3b82f6; /* Fundo fica azul */
+  color: #ffffff;            /* Garante que a letra continue branca */
+  transform: translateY(-2px); /* Dá uma leve "subidinha" no link */
+}
+
+/* =========================================
+   Corpo da Página
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.pinimg.com/736x/4c/d8/1b/4cd81b593ea6918aea66d49437ff2e55.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a tela toda */
+}
+
+/* =========================================
+   Layout Principal (Os Cartões)
+   ========================================= */
+main {
+    flex: 1; /* Empurra o footer para baixo */
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    
+    /* Cria um grid responsivo: 
+       se a tela for grande, ficam lado a lado. Se for celular, ficam um embaixo do outro */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Estilo individual de cada "Cartão" (div) */
+main > div {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse por cima do cartão */
+main > div:hover {
+    transform: translateY(-8px); /* Levanta o cartão */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15); /* Aumenta a sombra */
+}
+
+/* =========================================
+   Textos de dentro dos cartões
+   ========================================= */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 900; /* Letra bem grossa, como você perguntou antes! */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #020202;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f8f5f5;
+    border-bottom: 2px solid #eee; /* Linha de separação */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none; /* Tira as bolinhas padrão da lista */
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #ccc;
+}
+
+li strong {
+    color: #111;
+}
+
+/* =========================================
+   Cores Personalizadas para cada País
+   ========================================= */
+.brasil h1 { color: #009c3b; }
+.brasil li { border-left-color: #009c3b; }
+.brasil p { color: #f7f7f7; }
+
+
+.argentina h1 { color: #74acdf; }
+.argentina li { border-left-color: #74acdf; }
+.argentina p { color: #f7f7f7; }
+
+.mexico h1 { color: #006847; }
+.mexico li { border-left-color: #006847; }
+.mexico p { color: #f7f7f7; }
+
+.colombia h1 { color: #fcd116; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+.colombia li { border-left-color: #fcd116; }
+.colombia p { color: #f7f7f7; }
+
+
+.brasil{
+    background-image: linear-gradient(rgba(0,0,0,0.6)),url('https://i.pinimg.com/736x/f8/5b/90/f85b90beae37aa96c4a93959da873f56.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: 12px;
+}
+
+.argentina{
+    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/83/0e/19/830e19d1da5645ad99291b9173eb14eb.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.mexico{
+    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/94/1d/b0/941db0d0f4b135815183e56400434377.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+.colombia{
+    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/4b/9c/7f/4b9c7fbd445c555b66b75b635ac9cbf7.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+footer p {
+    color: #f8f5f5;
+    font-size: 0.9rem;
+    margin: 0;
+}
+/* =========================================
+   Rodapé (Footer)
+   ========================================= */
+footer {
+
+   
+    text-align: center;
+    padding: 5px 0;
+    margin-top: auto;
+}

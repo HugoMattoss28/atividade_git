@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para a lista de países do Exercício 5 */
+.card-pais {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+a {
+    margin-top: 20px;          /* Largura do link */
+  display: flex;   
+  justify-content: center;
+  align-items: center;         /* Faz o link se comportar como um botão */
+  color: #0055ff;            /* Letra quase branca */
+  text-decoration: none;     /* Remove o sublinhado feio padrão dos links */
+  font-size: 18px;           /* Tamanho da letra */
+  font-weight: 600;          /* Letra mais grossa (negrito suave) */
+  padding: 8px 16px;         /* Área clicável maior */
+  border-radius: 6px;        /* Bordas levemente arredondadas */
+  transition: all 0.3s ease; /* Faz as mudanças do :hover serem suaves */
+}
+
+
+a:hover {
+
+  color: #000000;            /* Garante que a letra continue branca */
+  transform: translateY(-2px); /* Dá uma leve "subidinha" no link */
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}

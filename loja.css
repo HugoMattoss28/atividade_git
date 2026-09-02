@@ -1,0 +1,125 @@
+/* loja.css - Estilos criativos para a loja de viagens */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Fundo azul bem claro e limpo */
+    color: #2c3e50;
+    margin: 0;
+    padding: 40px;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #1a5f7a;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container para organizar os itens lado a lado */
+.vitrine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Estilo dos cards de produtos/viagens */
+.card-produto {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-top: 5px solid #ff6b6b; /* Destaque vibrante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de flutuação ao passar o mouse */
+.card-produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-produto h2 {
+    color: #e66767;
+    font-size: 1.4em;
+    margin-top: 0;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.card-produto ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-produto li {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9f9f9;
+    padding-bottom: 5px;
+}
+
+.card-produto li strong {
+    color: #2c3e50;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff6b6b, #e66767);
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(230, 103, 103, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e66767, #c0392b);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(230, 103, 103, 0.5);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(230, 103, 103, 0.3);
+}
+
+a {
+    margin-top: 20px;          /* Largura do link */
+  display: flex;   
+  justify-content: center;
+  align-items: center;         /* Faz o link se comportar como um botão */
+  color: #0055ff;            /* Letra quase branca */
+  text-decoration: none;     /* Remove o sublinhado feio padrão dos links */
+  font-size: 18px;           /* Tamanho da letra */
+  font-weight: 600;          /* Letra mais grossa (negrito suave) */
+  padding: 8px 16px;         /* Área clicável maior */
+  border-radius: 6px;        /* Bordas levemente arredondadas */
+  transition: all 0.3s ease; /* Faz as mudanças do :hover serem suaves */
+}
+
+
+a:hover {
+
+  color: #000000;            /* Garante que a letra continue branca */
+  transform: translateY(-2px); /* Dá uma leve "subidinha" no link */
+}
