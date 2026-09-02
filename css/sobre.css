@@ -1,3 +1,6 @@
+/* =========================================
+   Estilos Gerais
+   ========================================= */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7f6;
@@ -17,12 +20,43 @@ p {
     font-size: 1.1em;
 }
 
+/* =========================================
+   Links Gerais
+   ========================================= */
+a {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0055ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   Formulários e Contato
+   ========================================= */
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
     max-width: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 input[type="text"], input[type="email"] {
@@ -47,7 +81,59 @@ button:hover {
     background-color: #2980b9;
 }
 
-/* Estilo para a lista de países do Exercício 5 */
+/* =========================================
+   Menu de Navegação (Header)
+   ========================================= */
+header {
+    padding: 20px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   Página Sobre - Estrutura
+   ========================================= */
+.conteudo-sobre {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cabecalho-sobre {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cabecalho-sobre h1 {
+    font-size: 2.5rem;
+    color: #1f2937;
+    border: none; /* Remove a borda padrão do h1 global nesta seção */
+}
+
+/* =========================================
+   Cartões (Exercício 5 e Sobre)
+   ========================================= */
 .card-pais {
     background: #fff;
     padding: 15px;
@@ -57,38 +143,37 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-a {
-    margin-top: 20px;          /* Largura do link */
-  display: flex;   
-  justify-content: center;
-  align-items: center;         /* Faz o link se comportar como um botão */
-  color: #0055ff;            /* Letra quase branca */
-  text-decoration: none;     /* Remove o sublinhado feio padrão dos links */
-  font-size: 18px;           /* Tamanho da letra */
-  font-weight: 600;          /* Letra mais grossa (negrito suave) */
-  padding: 8px 16px;         /* Área clicável maior */
-  border-radius: 6px;        /* Bordas levemente arredondadas */
-  transition: all 0.3s ease; /* Faz as mudanças do :hover serem suaves */
+.bloco-info {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #3b82f6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-a:hover {
-
-  color: #000000;            /* Garante que a letra continue branca */
-  transform: translateY(-2px); /* Dá uma leve "subidinha" no link */
+.bloco-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
-.contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.bloco-info h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
-form {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+.bloco-info p {
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* =========================================
+   Rodapé (Footer)
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
 }

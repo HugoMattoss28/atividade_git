@@ -10,37 +10,31 @@
 /* =========================================
                 menu
    ========================================= */
-
-   header {
-  
-  padding: 20px 0;           /* Espaçamento em cima e embaixo */
-   
+header {
+    padding: 20px 0; /* Espaçamento em cima e embaixo */
 }
-
 
 .menu {
-  display: flex;             /* Coloca os itens lado a lado */
-  justify-content: center;
-  align-items: center;       /* Centraliza tudo no meio da tela */
-  gap: 10px;                 /* Espaço exato de 30px entre cada link */
+    display: flex; /* Coloca os itens lado a lado */
+    justify-content: center;
+    align-items: center; /* Centraliza tudo no meio da tela */
+    gap: 10px; 
 }
-
 
 .menu a {
-  color: #f3f4f6;            /* Letra quase branca */
-  text-decoration: none;     /* Remove o sublinhado feio padrão dos links */
-  font-size: 18px;           /* Tamanho da letra */
-  font-weight: 600;          /* Letra mais grossa (negrito suave) */
-  padding: 8px 16px;         /* Área clicável maior */
-  border-radius: 6px;        /* Bordas levemente arredondadas */
-  transition: all 0.3s ease; /* Faz as mudanças do :hover serem suaves */
+    color: #f3f4f6; /* Letra quase branca */
+    text-decoration: none; /* Remove o sublinhado feio padrão dos links */
+    font-size: 18px; /* Tamanho da letra */
+    font-weight: 600; /* Letra mais grossa (negrito suave) */
+    padding: 8px 16px; /* Área clicável maior */
+    border-radius: 6px; /* Bordas levemente arredondadas */
+    transition: all 0.3s ease; /* Faz as mudanças do :hover serem suaves */
 }
 
-
 .menu a:hover {
-  background-color: #3b82f6; /* Fundo fica azul */
-  color: #ffffff;            /* Garante que a letra continue branca */
-  transform: translateY(-2px); /* Dá uma leve "subidinha" no link */
+    background-color: #3b82f6; /* Fundo fica azul */
+    color: #ffffff; /* Garante que a letra continue branca */
+    transform: translateY(-2px); /* Dá uma leve "subidinha" no link */
 }
 
 /* =========================================
@@ -93,7 +87,7 @@ main > div:hover {
    ========================================= */
 h1 {
     font-size: 2.2rem;
-    font-weight: 900; /* Letra bem grossa, como você perguntou antes! */
+    font-weight: 900; /* Letra bem grossa */
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -137,7 +131,6 @@ li strong {
 .brasil li { border-left-color: #009c3b; }
 .brasil p { color: #f7f7f7; }
 
-
 .argentina h1 { color: #74acdf; }
 .argentina li { border-left-color: #74acdf; }
 .argentina p { color: #f7f7f7; }
@@ -150,47 +143,45 @@ li strong {
 .colombia li { border-left-color: #fcd116; }
 .colombia p { color: #f7f7f7; }
 
-
-.brasil{
-    background-image: linear-gradient(rgba(0,0,0,0.6)),url('https://i.pinimg.com/736x/f8/5b/90/f85b90beae37aa96c4a93959da873f56.jpg');
-    background-size: cover;
-    background-position: center;
-    
-    border-radius: 12px;
-}
-
-.argentina{
-    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/83/0e/19/830e19d1da5645ad99291b9173eb14eb.jpg');
+.brasil {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/f8/5b/90/f85b90beae37aa96c4a93959da873f56.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
 }
 
-.mexico{
-    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/94/1d/b0/941db0d0f4b135815183e56400434377.jpg');
+.argentina {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/83/0e/19/830e19d1da5645ad99291b9173eb14eb.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
 }
-.colombia{
-    background-image: linear-gradient(rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/4b/9c/7f/4b9c7fbd445c555b66b75b635ac9cbf7.jpg');
+
+.mexico {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/94/1d/b0/941db0d0f4b135815183e56400434377.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
 }
+
+.colombia {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/4b/9c/7f/4b9c7fbd445c555b66b75b635ac9cbf7.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+/* =========================================
+   Rodapé (Footer)
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 5px 0;
+    margin-top: auto;
+} 
 
 footer p {
     color: #f8f5f5;
     font-size: 0.9rem;
     margin: 0;
-}
-/* =========================================
-   Rodapé (Footer)
-   ========================================= */
-footer {
-
-   
-    text-align: center;
-    padding: 5px 0;
-    margin-top: auto;
 }
