@@ -8,3 +8,6 @@ git remote -v (para ter certeza)
 git branch -M main (para mudar de master para main)
 git commit -m "Criando estrutura inicial do projeto"
 git push -u origin main
+git log --oneline
+
+Pergunta: quantos commits seu projeto possui até este momento? 8 commits
