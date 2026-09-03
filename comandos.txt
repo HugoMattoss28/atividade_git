@@ -8,6 +8,17 @@ git remote -v (para ter certeza)
 git branch -M main (para mudar de master para main)
 git commit -m "Criando estrutura inicial do projeto"
 git push -u origin main
-git log --oneline
+git log --oneline 
+git add .
+git commit -m "add o arquivo teste.txt"
+git push
+git rm teste.txt
+git commit -m "*****"
+git status
+git push
+ni .gitignore -Type File (para add o gitignore)
+
 
 Pergunta: quantos commits seu projeto possui até este momento? 8 commits
+Pergunta: qual comando foi utilizado para remover o arquivo?  git rm teste.txt
+Pergunta: por que arquivos como .env normalmente não devem ser enviados para um repositório? porque guarda informações importantes tipo Senhas, chaves de API, tokens
